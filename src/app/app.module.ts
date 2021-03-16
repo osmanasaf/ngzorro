@@ -17,6 +17,11 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import {NzDropDownModule} from 'ng-zorro-antd/dropdown';
 import {NzTimelineModule} from 'ng-zorro-antd/timeline';
+import {AccordionModule} from 'primeng/accordion';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+import {FileUploadModule} from 'primeng/fileupload';
+import {ButtonModule} from 'primeng/button';
 
 
 registerLocaleData(tr);
@@ -40,7 +45,12 @@ registerLocaleData(tr);
     NzFormModule,
     NzDropDownModule,
     NzTableModule,
-    NzTimelineModule
+    NzTimelineModule,
+    AccordionModule,
+    MessageModule,
+    MessagesModule,
+    FileUploadModule,
+    ButtonModule
   ],
   providers: [{ provide: NZ_I18N, useValue: tr_TR }],
   bootstrap: [AppComponent],

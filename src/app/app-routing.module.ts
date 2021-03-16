@@ -6,6 +6,8 @@ import {CompanyListComponent} from './pages/company-list/company-list.component'
 import {CompanyAddComponent} from './pages/company-add/company-add.component';
 import {KontakAddComponent} from './pages/kontak-add/kontak-add.component';
 import {AdayProfileComponent} from './aday-profile/aday-profile.component';
+import {WelcomeComponent} from './pages/welcome/welcome.component';
+
 
 
 
@@ -15,7 +17,8 @@ const routes: Routes = [
   {path: 'company/list', component: CompanyListComponent},
   {path: 'company/add', component: CompanyAddComponent},
   {path: 'company/kontak/add', component: KontakAddComponent},
-  {path: 'aday/profile', component: AdayProfileComponent}
+  {path: 'aday/profile', component: AdayProfileComponent},
+  {path: 'welcome', component: WelcomeComponent}
 ];
 
 @NgModule({
@@ -24,4 +27,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 // tslint:disable-next-line:max-line-length
-export const routingComponents = [AdayEkleComponent, AdayListComponent, CompanyListComponent, CompanyAddComponent, KontakAddComponent, AdayProfileComponent];
+export const routingComponents = [AdayEkleComponent, AdayListComponent, CompanyListComponent, CompanyAddComponent, KontakAddComponent, AdayProfileComponent, WelcomeComponent];
